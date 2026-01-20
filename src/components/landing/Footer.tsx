@@ -8,8 +8,8 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-2">
              <Link href="/" className="flex items-center gap-2 mb-6">
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold">
-                    B
+                <div className="w-12 h-12 flex items-center justify-center">
+                    <img src="/logo_trans.png" alt="BIMSaarthi Logo" className="w-full h-full object-contain" />
                 </div>
                 <span className="text-xl font-bold text-white">BIMSaarthi</span>
             </Link>
@@ -23,22 +23,27 @@ export function Footer() {
             </div>
           </div>
 
-          <div>
-            <h4 className="font-bold mb-6">Platform</h4>
-            <ul className="space-y-4 text-sm text-muted-foreground">
-              <li><Link href="#" className="hover:text-white transition-colors">Architecture</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors">Use Cases</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors">Pricing</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors">Login</Link></li>
-            </ul>
+          <div className="md:col-span-1">
+            <h4 className="font-bold mb-6">Links</h4>
+            <div className="grid grid-cols-2 gap-4">
+                <ul className="space-y-4 text-sm text-muted-foreground">
+                    <li><Link href="/product" className="hover:text-white transition-colors">Product</Link></li>
+                    <li><Link href="/solutions" className="hover:text-white transition-colors">Solutions</Link></li>
+                    <li><Link href="/services" className="hover:text-white transition-colors">Services</Link></li>
+                </ul>
+                <ul className="space-y-4 text-sm text-muted-foreground">
+                    <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
+                    <li><Link href="/research" className="hover:text-white transition-colors">Research</Link></li>
+                    <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
+                </ul>
+            </div>
           </div>
 
           <div>
              <h4 className="font-bold mb-6">Contact</h4>
              <ul className="space-y-4 text-sm text-muted-foreground">
               <li>info@bimsaarthi.com</li>
-              <li>Research Park, IIT Madras</li>
-              <li>Chennai, India</li>
+              <li>Amaravati, Andhra Pradesh, India</li>
             </ul>
           </div>
         </div>
