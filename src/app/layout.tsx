@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -22,6 +23,7 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
